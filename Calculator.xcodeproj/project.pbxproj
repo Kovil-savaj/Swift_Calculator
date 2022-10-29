@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8616E4E0290C3013005679AB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8616E4DF290C3013005679AB /* RoundButton.swift */; };
 		86B43DAC290B0DA8001954B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B43DAB290B0DA8001954B6 /* AppDelegate.swift */; };
 		86B43DAE290B0DA8001954B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B43DAD290B0DA8001954B6 /* SceneDelegate.swift */; };
 		86B43DB0290B0DA8001954B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B43DAF290B0DA8001954B6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8616E4DF290C3013005679AB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		86B43DA8290B0DA8001954B6 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B43DAB290B0DA8001954B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86B43DAD290B0DA8001954B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				86B43DB4290B0DA9001954B6 /* Assets.xcassets */,
 				86B43DB6290B0DA9001954B6 /* LaunchScreen.storyboard */,
 				86B43DB9290B0DA9001954B6 /* Info.plist */,
+				8616E4DF290C3013005679AB /* RoundButton.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8616E4E0290C3013005679AB /* RoundButton.swift in Sources */,
 				86B43DB0290B0DA8001954B6 /* ViewController.swift in Sources */,
 				86B43DAC290B0DA8001954B6 /* AppDelegate.swift in Sources */,
 				86B43DAE290B0DA8001954B6 /* SceneDelegate.swift in Sources */,
@@ -284,7 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = cal;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9WM6XJ565K;
@@ -312,7 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = cal;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9WM6XJ565K;
