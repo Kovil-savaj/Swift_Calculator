@@ -12,6 +12,7 @@ enum Operation:String {
     case Subtract = "-"
     case Divide = "/"
     case Multiply = "*"
+    case Percentage = "%"
     case NULL = "Null"
 }
 
@@ -71,10 +72,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equalPressed(_ sender: RoundButton) {
-        operation(operation: currentOperation)
+       operation(operation: currentOperation)
     }
     
     @IBAction func percentagePressed(_ sender: RoundButton) {
+        operation(operation: .Percentage)
     }
     
     @IBAction func signChange(_ sender: RoundButton) {
@@ -94,9 +96,13 @@ class ViewController: UIViewController {
                     result = "\(Double(leftValue)! * Double(rightValue)!)"
                 }else if currentOperation == .Divide{
                     result = "\(Double(leftValue)! / Double(rightValue)!)"
+                }else if currentOperation == .Percentage{
+                    result = "\((Double(leftValue)! / Double(rightValue)!) * 100) "
                 }
                 leftValue = result
-                if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0){
+                if currentOperation == .Percentage {
+                    
+                }else if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0){
                     result = "\(Int(Double(result)!))"
                 }
                 screenlabel.text = result
